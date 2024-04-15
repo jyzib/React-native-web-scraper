@@ -3,9 +3,7 @@ import React from "react";
 import { Tabs } from "expo-router";
 import { icons } from "../../constants";
 const TabIcon = ({ color, icon, name, focused }) => {
-    console.log(focused)
-    console.log(color)
-  console.log(icon);
+   
   return (
     <View className="flex items-center justify-center gap-2 p-6">
       <Image

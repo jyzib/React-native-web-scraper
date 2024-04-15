@@ -36,7 +36,8 @@ KeyboardType = 'email-address'
 handelform = {()=>console.log(e)}
 value={form.password}
 otherStyle="mt-4"
-KeyboardType = 'email-address'
+KeyboardType = 'password'
+
  />
 
 <CustomeBtn 
@@ -46,9 +47,12 @@ KeyboardType = 'email-address'
    containerStyles="w-full mt-8"
 />
 
+<Text className={'text-white text-center mt-10 text-xl flex w-full' } >Don't have account? <Link className={'text-secondary-100 font-pbold'} href={'/Sign-up'} >Sign Up</Link></Text>
+
 <View>
 
 </View>
+
 </View>
 </View>
 </ScrollView>

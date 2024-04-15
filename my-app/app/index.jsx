@@ -13,11 +13,13 @@ export default function App() {
     <SafeAreaView className={"bg-primary h-full"}>
       <ScrollView contentContainerStyle={{ height: "100vh" }}>
         <View className={"w-full  items-center h-full px-4 gap-y-8  mt-10"}>
+          
           <Image
             resizeMode="contain"
             className={"w-[240px] h-[100px] "}
             source={images.yatharthritilogo}
           />
+
           <Image
             resizeMode="contain"
             className={"w-[300px] h-[330px] "}
@@ -42,11 +44,17 @@ export default function App() {
             isLoading={false}
             containerStyles="w-full mt-8"
           />
-          <Link href={'/home'}>
-          <Text>ok</Text>
-          </Link>
        
-       
+
+          <CustomeBtn
+            title="Home"
+            handelPress={() => {router.push('/home')}}
+            isLoading={false}
+            containerStyles="w-full mt-8 mb-[100px]"
+          />
+
+ 
+
         </View>
       </ScrollView>
       <StatusBar backgroundColor="#161622" style='light' />
